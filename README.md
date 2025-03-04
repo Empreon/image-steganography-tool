@@ -26,40 +26,64 @@
   - Custom counting sort implementation
 
 ### Class Diagram
+```mermaid
 classDiagram
-class ImageEncryption{
-+main()
-}
-
-class LogFile{
-    -filePath: String
-    +writeLog()
-    +closeLogFile()
-}
-
-class ImageHandler{
-    -pixelData: int[][]
-    +loadImage()
-    +convertToPNG()
-    +saveImage()
-}
-
-class EncryptedImage{
-    -key: int
-    -message: String
-    +encryptMessage()
-    -generateRandomKey()
-}
-
-class UserWindow{
-    -textfield: JTextField
-    +textLengthCheck()
-    +textASCIIValueCheck()
-}
-
-ImageHandler <|-- EncryptedImage : Inheritance
-UserWindow --> LogFile : Composition
-ImageEncryption --> UserWindow : Creates
+    ImageHandler <|-- EncryptedImage
+    ImageEncryption o-- UserWindow
+    ImageEncryption o-- EncryptedImage
+    UserWindow o-- LogFile
+    UserWindow <|-- ImageEncryption
+    LogFile <|-- ImageEncryption
+    
+    class ImageHandler {
+        +ImageHandler(String)
+        -pixelData: int[][]
+        -processedImage: BufferedImage
+        +writePixelData() void
+        +changePixel(int, int) void
+        +convertToPNG() BufferedImage
+        +loadImage() void
+        +saveImage() void
+        #image: BufferedImage
+        #pixelData: int[][]
+        #processedImage: BufferedImage
+    }
+    
+    class UserWindow {
+        +UserWindow()
+        +showErrorMessage(String) void
+        +textLengthCheck(String) void
+        +textASCIIValueCheck(String) void
+        -buttonAction() boolean
+        +showInformationMessage(String) void
+        +clearTextField() void
+        -displayImage(String) void
+        -closeWindow() void
+    }
+    
+    class LogFile {
+        +LogFile()
+        +writeLog(String) void
+        +createLogFile() void
+        +closeLogFile() void
+        -formattedDateTime: String
+    }
+    
+    class ImageEncryption {
+        +ImageEncryption()
+        +main(String[]) void
+    }
+    
+    class EncryptedImage {
+        +EncryptedImage(String, String)
+        -changeBlueValues() void
+        -generateRandomArray() void
+        -generateRandomKey() void
+        +encryptMessage() void
+        -countingSort() void
+        -setZeroPixel() void
+    }
+```
 
 
 ## Technical Highlights
