@@ -25,29 +25,42 @@
   - Dual-array synchronization
   - Custom counting sort implementation
 
-### 🛠 Technical Components
+### Class Diagram
 classDiagram
-class ImageHandler{
-+loadImage()
-+saveImage()
-+convertToPNG()
+class ImageEncryption{
++main()
 }
-class EncryptedImage{
-+encryptMessage()
--generateRandomKey()
--changeBlueValues()
-}
-class UserWindow{
-+textASCIIValueCheck()
-+textLengthCheck()
-}
+
 class LogFile{
-+writeLog()
-+closeLogFile()
+    -filePath: String
+    +writeLog()
+    +closeLogFile()
 }
-ImageHandler <|-- EncryptedImage
-UserWindow --> EncryptedImage
-UserWindow --> LogFile
+
+class ImageHandler{
+    -pixelData: int[][]
+    +loadImage()
+    +convertToPNG()
+    +saveImage()
+}
+
+class EncryptedImage{
+    -key: int
+    -message: String
+    +encryptMessage()
+    -generateRandomKey()
+}
+
+class UserWindow{
+    -textfield: JTextField
+    +textLengthCheck()
+    +textASCIIValueCheck()
+}
+
+ImageHandler <|-- EncryptedImage : Inheritance
+UserWindow --> LogFile : Composition
+ImageEncryption --> UserWindow : Creates
+
 
 ## Technical Highlights
 | Component          | Implementation Details                          | OOP Concept Used       |
