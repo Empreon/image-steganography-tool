@@ -2,9 +2,7 @@
 **Java-based message encryption/decryption using RGB pixel manipulation**  
 [![Java Version](https://img.shields.io/badge/Java-17%2B-blue)](https://www.oracle.com/java/)
 
-<p align="center">
-  <img src="https://via.placeholder.com/400x250.png?text=Encrypted+Image+Preview" alt="UI Preview">
-</p>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 ## Key Features
 ### 🔒 Encryption
