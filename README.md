@@ -1,4 +1,4 @@
-# Image Steganography Tool 🔐🖼️
+# Image Steganography Tool
 **Java-based message encryption/decryption using RGB pixel manipulation**  
 [![Java Version](https://img.shields.io/badge/Java-17%2B-blue)](https://www.oracle.com/java/)
 
