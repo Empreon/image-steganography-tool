@@ -107,16 +107,16 @@ classDiagram
 
 - **Log File Sample**:
 ```
-Window created. 16:54:55 25 May 2024
-File loaded: image.jpg 16:55:15 25 May 2024
-File name: image 16:55:15 25 May 2024
-File type: jpg 16:55:15 25 May 2024
-File dimensions: 50x50 16:55:15 25 May 2024
-File converted to PNG: image.png 16:55:15 25 May 2024
-Pixel data stored. 16:55:15 25 May 2024
-Random key generated: 210 16:55:15 25 May 2024
-Pixel 225 changed to: 230 254 209 16:55:15 25 May 2024
-Pixel 943 changed to: 230 254 209 16:55:15 25 May 2024
+Window created.                     16:54:55 25 May 2024
+File loaded: image.jpg              16:55:15 25 May 2024
+File name: image                    16:55:15 25 May 2024
+File type: jpg                      16:55:15 25 May 2024
+File dimensions: 50x50              16:55:15 25 May 2024
+File converted to PNG: image.png    16:55:15 25 May 2024
+Pixel data stored.                  16:55:15 25 May 2024
+Random key generated: 210           16:55:15 25 May 2024
+Pixel 225 changed to: 230 254 209   16:55:15 25 May 2024
+Pixel 943 changed to: 230 254 209   16:55:15 25 May 2024
 ```
 
 ## Requirements
