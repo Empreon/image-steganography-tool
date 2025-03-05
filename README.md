@@ -107,10 +107,16 @@ classDiagram
 
 - **Log File Sample**:
 ```
-[17:00:05 04 Mar 2025] Loaded image.jpg (50x50px)
-[17:00:07 04 Mar 2025] Generated encryption key: 210
-[17:00:09 04 Mar 2025] Encrypted 42-character message
-[17:00:11 04 Mar 2025] Saved encrypted_image.png
+Window created. 16:54:55 25 May 2024
+File loaded: image.jpg 16:55:15 25 May 2024
+File name: image 16:55:15 25 May 2024
+File type: jpg 16:55:15 25 May 2024
+File dimensions: 50x50 16:55:15 25 May 2024
+File converted to PNG: image.png 16:55:15 25 May 2024
+Pixel data stored. 16:55:15 25 May 2024
+Random key generated: 210 16:55:15 25 May 2024
+Pixel 225 changed to: 230 254 209 16:55:15 25 May 2024
+Pixel 943 changed to: 230 254 209 16:55:15 25 May 2024
 ```
 
 ## Requirements
